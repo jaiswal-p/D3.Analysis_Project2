@@ -69,7 +69,7 @@
   width: 50%;
   text-align: center;
   margin: auto;
-  border: : 5px solid grey;
+  border: 5px solid grey;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -78,7 +78,17 @@
   width: 50%;
   text-align: center;
   margin: auto;
-  border: : 5px solid grey;
+  border: 5px solid grey;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.dimple-bar{
+  fill: yellow;
+}
+.dimple-bar:hover{
+  fill: purple !important;
+}
+
+.chartContainer>svg>text{
+  color:"red" !important;
 }
