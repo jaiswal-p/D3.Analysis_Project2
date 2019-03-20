@@ -32,7 +32,7 @@
       
       var data_source = "http://localhost:8000/data/yearly_data.tsv";
       var name = "IMDB Yearly Movie And Genre Counts (1950-2016)";
-      createGenreChart("#genreChartContainer",
+            createGenreChart("#genreChartContainer",
         data_source,
         name,
         start_year,
@@ -50,16 +50,14 @@
     </div>
   </form>
 
-  <br><br>
+  <br>
   <div class="exposition">
-    This data set has taken from imdb database. 
-    <br> <br>
-
-    This histogram chart shows us the number of movie genre between 1950 - 2016, and absolute counts and percentage of releases, and also total number of movies in 1950-2016 years.
     
+      <font size="4"> This chart shows us the number of movie genre between 1950 - 2016, and absolute counts and percentage of releases, and also total number of movies in 1950-2016 years. </font>
+
         </div>
 
-        <br><br>
+        <br>  <br>
    <div id="lengthBinChartContainer" 
    class="chartContainer">
     <script type="text/javascript">
@@ -74,6 +72,14 @@
     </script>
   </div>
 
+    <div class="exposition">
+      <font size="4"> This chart highlights short and middle length movies are watched with high percentage. This is because of the high number of movies produced in these two lengths. One of the reason is it is easier to reach and share short movies on social media and other electronic platforms. The other reason is people have the chance to watch it at their break times. 
+        </font>
+    
+        </div>
+
+        <br>
+
   <div id="votesBinChartContainer" class="chartContainer">
     <script type="text/javascript">
       createHistChart("#votesBinChartContainer",
@@ -85,6 +91,14 @@
         "IMDB User Vote Count");
     </script>
   </div>
+
+ 
+  <div class="exposition">
+      <font size="4"> This chart examines while the rating is an increasing percentage of voting decrease.  </font>
+
+        </div>
+
+        <br> <br>
 
   <div id="budgetChartContainer" class="chartContainer">
     <script type="text/javascript">
@@ -99,6 +113,14 @@
     </script>
   </div>
 
+  <div class="exposition">
+      <font size="4"> As seen in this chart, the production percentage of the movies is approximately constant up to 10K budge. Its peak around 10 K budges and then decrease as the budget increase.
+        </font>
+
+    
+        </div>
+
+        <br><br>
 
 </body>
 
