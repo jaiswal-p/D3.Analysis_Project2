@@ -83,13 +83,15 @@ var createCountsChart = function (container, //html div to put this in
     //Create dimple chart
     var chart = new dimple.chart(svg);
     chart.setMargins("8%", "12%", "16%", "16%");
-    chart.addColorAxis("percent", ["green", "yellow", "red"]);
+    chart.addColorAxis("count", ["green", "yellow", "red"]);
 
     //Make x axis
     var x_axis;
     if (chart_type === 'line')
     {
       x_axis = chart.addMeasureAxis("x", data_name);
+      chart.addSeries(data_name, dimple.plot.bubble);
+
     }
     
     else if (chart_type === 'hist')
@@ -111,7 +113,11 @@ var createCountsChart = function (container, //html div to put this in
     if (chart_type === 'hist')
       y_axis = chart.addMeasureAxis("y", "percent");
     else
+    {
+
       y_axis = chart.addPctAxis("y", "percent");
+      
+    }
     y_axis.tickFormat = ".1%";
 
     var key_name = data_name;
@@ -120,7 +126,11 @@ var createCountsChart = function (container, //html div to put this in
 
     var series;
     if (chart_type === 'line')
+    {
+
       series = chart.addSeries(key_name, dimple.plot.line);
+      
+    }
     else if (chart_type === 'hist')
       series = chart.addSeries(null, dimple.plot.bar);
     //series.lineMarkers = true;

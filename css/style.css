@@ -92,3 +92,12 @@
 .chartContainer>svg>text{
   color:"red" !important;
 }
+
+#budgetChartContainer svg circle{
+  fill:red;
+  stroke: orange;
+  opacity: 0.850 !important;
+}
+div.jumbotron {
+  background: white;
+}
